@@ -19,8 +19,8 @@ def numero_primo(num:int) ->bool:
     rais:int = num**(0.5)
 
 # validar si numero es par o 2 
-    if num% 2 == 0 and num == 2:
-        return True    
+    if num% 2 == 0 and num != 2:
+        return False    
     else:
 # validar numeros desde i hasta la raiz del numero 
         for i in range(1, int(rais)+1):
